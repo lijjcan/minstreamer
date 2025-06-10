@@ -1,11 +1,13 @@
 # Fitness Motion Quality Evaluation
 
-This example demonstrates a simple C++ application using OpenCV for pose
-estimation. It captures frames from a camera, detects joint positions with
-the OpenPose model provided in OpenCV's DNN module and evaluates the motion.
+This example demonstrates a simple Qt and OpenCV application for
+evaluating fitness poses. The GUI allows loading an image, detects joint
+positions with the OpenPose model from OpenCV's DNN module and evaluates
+the motion.
 
 The code is intended as a starting point and requires OpenCV with DNN
-support. You will need the OpenPose `.prototxt` and `.caffemodel` files.
+support as well as Qt5. You will need the OpenPose `.prototxt` and
+`.caffemodel` files.
 
 ## Build
 
@@ -20,4 +22,6 @@ make
 ```
 
 where `<proto>` is the path to the OpenPose prototxt file and `<model>` is
-the path to the caffe weight file.
+the path to the caffe weight file. After launching, click **Open Image** to
+select a picture to analyse. The detected joints and an elbow angle
+evaluation are drawn on the image.

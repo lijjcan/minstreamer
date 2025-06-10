@@ -1,6 +1,6 @@
 CXX=g++
-CXXFLAGS=`pkg-config --cflags opencv4` -std=c++11
-LDFLAGS=`pkg-config --libs opencv4`
+CXXFLAGS=`pkg-config --cflags opencv4 Qt5Widgets` -std=c++11 -fPIC
+LDFLAGS=`pkg-config --libs opencv4 Qt5Widgets`
 
 all: fitness_app
 
